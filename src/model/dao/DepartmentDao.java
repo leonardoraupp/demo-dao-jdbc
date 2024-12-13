@@ -13,6 +13,7 @@ public interface DepartmentDao {
     void deleteById(Integer id);
 
     Department findById(Integer id);
+    Department findByName(String name);
 
     List<Department> findAll();
 }

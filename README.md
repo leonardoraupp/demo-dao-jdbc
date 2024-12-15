@@ -23,7 +23,7 @@ This project is designed to provide a comprehensive study of Java Database Conne
 ### Installation
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/leonardoraupp/demo-dao-jdbc.git
+   git clone git@github.com:leonardoraupp/demo-dao-jdbc.git
    cd demo-dao-jdbc
    ```
 

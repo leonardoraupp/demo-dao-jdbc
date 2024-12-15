@@ -39,11 +39,11 @@ This project is designed to provide a comprehensive study of Java Database Conne
 ### DAO Implementation
 - **SellerDAO**: Data Access Object for `Seller` entity.
   - **Seller**: JavaBean representing the seller entity.
-  - **SellerDAOImpl**: Implementation of `SellerDAO` interface with methods for CRUD operations.
+  - **SellerDAOJDBC**: Implementation of `SellerDAO` interface with methods for CRUD operations.
  
 - **DepartmentDAO**: Data Access Object for `Department` entity.
   - **Department**: JavaBean representing the department entity.
-  - **DepartmentDAOImpl**: Implementation of `DepartmentDAO` interface with methods for CRUD operations.
+  - **DepartmentDAOJDBC**: Implementation of `DepartmentDAO` interface with methods for CRUD operations.
 
 ## Contributing
 Contributions are welcome! Please fork this repository and submit pull requests for any enhancements, bug fixes, or new features.

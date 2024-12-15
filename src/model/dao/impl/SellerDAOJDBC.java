@@ -4,15 +4,15 @@ import db.DB;
 import db.DbException;
 import model.entities.Department;
 import model.entities.Seller;
-import model.dao.SellerDao;
+import model.dao.SellerDAO;
 
 import java.sql.*;
 import java.util.*;
 
-public class SellerDaoJDBC implements SellerDao {
+public class SellerDAOJDBC implements SellerDAO {
     private Connection connection = null;
 
-    public SellerDaoJDBC(Connection connection) {
+    public SellerDAOJDBC(Connection connection) {
         this.connection = connection;
     }
 

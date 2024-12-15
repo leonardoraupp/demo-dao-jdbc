@@ -2,18 +2,18 @@ package model.dao.impl;
 
 import db.DB;
 import db.DbException;
-import model.dao.DepartmentDao;
+import model.dao.DepartmentDAO;
 import model.entities.Department;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DepartmentDaoJDBC implements DepartmentDao {
+public class DepartmentDAOJDBC implements DepartmentDAO {
 
     private Connection connection = null;
 
-    public DepartmentDaoJDBC(Connection connection) {
+    public DepartmentDAOJDBC(Connection connection) {
         this.connection = connection;
     }
 

@@ -1,9 +1,7 @@
 package application;
 
-import db.DB;
-import model.dao.DaoFactory;
-import model.dao.SellerDao;
-import model.dao.impl.SellerDaoJDBC;
+import model.dao.DAOFactory;
+import model.dao.SellerDAO;
 import model.entities.Department;
 import model.entities.Seller;
 
@@ -15,7 +13,7 @@ public class Program {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        SellerDao sellerDao = DaoFactory.createSellerDao();
+        SellerDAO sellerDao = DAOFactory.createSellerDao();
 
         System.out.println("---------Test 1: FindById---------");
         Seller seller = sellerDao.findById(3);

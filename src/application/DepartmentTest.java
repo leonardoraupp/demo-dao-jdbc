@@ -1,7 +1,7 @@
 package application;
 
-import model.dao.DaoFactory;
-import model.dao.DepartmentDao;
+import model.dao.DAOFactory;
+import model.dao.DepartmentDAO;
 import model.entities.Department;
 
 import java.util.Scanner;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class DepartmentTest {
     public static void main(String[] args) {
 
-        DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
+        DepartmentDAO departmentDao = DAOFactory.createDepartmentDao();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("---------Test 1: Find Department by Id---------");
@@ -28,7 +28,7 @@ public class DepartmentTest {
         System.out.print("Enter a name for the department: ");
         String depName = sc.nextLine();
         departmentDao.insert(new Department(depName));
-        if (departmentDao.findByName("Sales").getName().equals("Sales")) {
+        if (departmentDao.findByName(depName).getName().equals(depName)) {
             System.out.println("Department created.");
         }
 
